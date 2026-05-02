@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MemeHub</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #0f0f0f;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background: #111;
+      padding: 15px;
+      position: sticky;
+      top: 0;
+    }
+
+    h1 {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      background: yellow;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .meme-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+
+    .meme-grid img {
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .meme-grid img:hover {
+      transform: scale(1.05);
+    }
+
+    .submit-box {
+      padding: 20px;
+    }
+
+    input {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    footer {
+      background: #111;
+      padding: 10px;
+      margin-top: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h2>🔥 MemeHub</h2>
+</header>
+
+<h1>😂 Best Memes Daily</h1>
+
+<button onclick="follow()">Follow Instagram</button>
+<button onclick="alert('Feature coming soon')">Submit Meme</button>
+
+<div class="meme-grid">
+  <img src="https://i.imgur.com/1.jpg">
+  <img src="https://i.imgur.com/2.jpg">
+  <img src="https://i.imgur.com/3.jpg">
+  <img src="https://i.imgur.com/4.jpg">
+</div>
+
+<div class="submit-box">
+  <h2>📥 Submit Meme</h2>
+  <input type="file"><br>
+  <input type="text" placeholder="Your Name"><br>
+  <button>Submit</button>
+</div>
+
+<footer>
+  <p>Follow us 👇</p>
+  <p>Instagram | Telegram | YouTube</p>
+  <p>© MemeHub 2026</p>
+</footer>
+
+<script>
+function follow() {
+  window.location.href = "https://instagram.com";
+}
+</script>
+
+</body>
+</html>
